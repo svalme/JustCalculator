@@ -1,0 +1,8 @@
+{
+  "name": "Just Calculator",
+  "description": "",
+  "repository": "https://github.com/svalme/JustCalculator",
+  "logo": "",
+  "keywords": ["node", "heroku"],
+  "image": "heroku/nodejs"
+}
