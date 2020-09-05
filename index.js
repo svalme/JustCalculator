@@ -1,9 +1,6 @@
 const http = require('http');
 const fs = require('fs');
 
-const hostname = process.env.hostname || 'localhost';
-const port = process.env.PORT || 5000;
-
 const server = http.createServer((req, res) => {
   
   var pathOfPage;
@@ -29,6 +26,4 @@ const server = http.createServer((req, res) => {
 });
 
 // start the server on port 5000
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+server.listen(process.env.PORT);
