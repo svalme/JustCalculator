@@ -1,5 +1,5 @@
 {
-  "name": "Just Calculator",
+  "name": "JustCalculator",
   "version": "0.0.0",
   "description": "",
   "engines": {
@@ -8,9 +8,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node test.js"
+    "test": "node test.js",
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.1.0"
   },
   "devDependencies": {
     "got": "^11.3.0",
