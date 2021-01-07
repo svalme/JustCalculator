@@ -3,6 +3,8 @@ const fs = require('fs');
 var path = require('path');
 const url = require('url');
 
+const PORT = process.env.PORT || 5000;
+
 const server = http.createServer((request, res) => {
   
   var u = url.parse(request.url, true);
@@ -49,4 +51,4 @@ const server = http.createServer((request, res) => {
 });
 
 // start the server on port 
-server.listen(process.env.PORT);
+server.listen(PORT);
